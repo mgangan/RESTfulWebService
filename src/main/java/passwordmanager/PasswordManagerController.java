@@ -1,4 +1,4 @@
-package hello;
+package passwordmanager;
 
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,22 +11,12 @@ import org.springframework.http.ResponseEntity;
 import java.util.ArrayList;
 
 @RestController
-public class GreetingController {
+public class PasswordManagerController {
 
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
     private UserList users = new UserList();
     private static final String successResponse = "Successfully ";
     private static final String failResponse = "Failed to ";
     
-
-
-    @RequestMapping(value="/greeting", method=RequestMethod.GET)
-    public Greeting greeting(@RequestParam(value="name", required=false, defaultValue="World") String name) {
-        return new Greeting(counter.incrementAndGet(),
-                            String.format(template, name));
-    }
-
     @RequestMapping(value="/view", method=RequestMethod.GET)
     public ArrayList<User> view() {
         return users.getUsers();

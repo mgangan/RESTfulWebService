@@ -1,4 +1,4 @@
-package hello;
+package passwordmanager;
 
 public class User {
 	private long id;
