@@ -13,7 +13,6 @@ To build the project you will need
 - a tool to send POST request, e.g. [cUrl](http://curl.haxx.se/)
 
 ## Build and run
------------
 
 1. Run build.bat file or type the following line in console from project folder:
 
