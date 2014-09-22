@@ -4,7 +4,6 @@
 Simple RESTful web service with full support of CRUD. Based on the [Spring "Building a RESTful Web Service" tutorial](https://spring.io/guides/gs/rest-service/).
 
 ## Requirements
-------------
 
 To build the project you will need 
  
@@ -16,23 +15,23 @@ To build the project you will need
 
 1. Run build.bat file or type the following line in console from project folder:
 
-```
-mvn clean package
-```
+ ```
+ mvn clean package
+ ```
 
 2. Run run.bat file or type the following line in console from project folder:
 
-```
-java -jar target\gs-rest-service-0.1.0.jar
-```
+ ```
+ java -jar target\gs-rest-service-0.1.0.jar
+ ```
 
 3. To check type url
 
-```
-http://localhost:8080/view
-```
+ ```
+ http://localhost:8080/view
+ ```
 
-in any browser.
+ in any browser.
 
 ## API specification
 
